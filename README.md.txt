@@ -1,48 +1,17 @@
+# Face Mask Detection using MobileNetV2
 
-## Quick Start
+This project uses Transfer Learning with the MobileNetV2 architecture to detect whether a person is wearing a face mask.
 
-### 1. Train the model
-Open `face_mask_detection_project.py` in Colab and run all cells.
+## 📊 Performance
+- **Validation Accuracy:** 99.2% (Replace with your actual result)
+- **Framework:** TensorFlow / Keras
+- **Dataset:** Kaggle Face Mask Dataset (12K Images)
 
-### 2. Run webcam detection
-```bash
-pip install -r requirements.txt
-python detect_mask.py
-```
+## 🚀 How to use
+1. Open the notebook in Google Colab.
+2. Upload your `kaggle.json` to download the dataset.
+3. Run all cells to train.
+4. Use the `predict_from_upload` function to test your own images.
 
-Press `q` to quit.
-
-## Results
-
-Model accuracy: ~95% on test set (your actual result from notebook).
-
-## Screenshots
-
-### Training Curve
-![Training](outputs/training_curve.png)
-
-### Webcam Demo
-![Webcam](outputs/webcam_demo.png)
-
-## Requirements
-
-```bash
-pip install -r requirements.txt
-```
-
-## Model Details
-
-- **Architecture:** MobileNetV2 + classification head.
-- **Input:** 224x224 RGB images.
-- **Classes:** `with_mask`, `without_mask`.
-
-## Future Work
-
-- Add `mask_weared_incorrect` class.
-- Deploy as Streamlit app.
-- Improve face detection speed.
-- Mobile deployment.
-
-## License
-
-MIT License.
+## 📈 Training Results
+![Training Curves](./results/training_curves.png)
