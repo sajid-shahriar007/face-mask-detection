@@ -2,7 +2,7 @@
 ## Quick Start
 
 ### 1. Train the model
-Open `Face_Mask_Detection.ipynb` in Colab and run all cells.
+Open `face_mask_detection_project.py` in Colab and run all cells.
 
 ### 2. Run webcam detection
 ```bash
