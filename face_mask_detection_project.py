@@ -500,6 +500,12 @@ def show_batch_predictions(model, val_gen, num_images=8):
 
 show_batch_predictions(model, val_gen)
 
+from google.colab import files
+
+# This will download the file directly to your 'Downloads' folder
+files.download('/content/face_mask_detector.keras')
+print("Check your browser downloads for the model file!")
+
 print("\n" + "=" * 55)
 print("  FACE MASK DETECTION — PROJECT COMPLETE")
 print("=" * 55)
